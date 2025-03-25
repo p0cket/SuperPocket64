@@ -7,3 +7,9 @@ export type Project = {
   link: string
   technologies: string[]
 }
+
+export type SelectScreenPayload = {
+  screen: string
+  setScreen: React.Dispatch<React.SetStateAction<string>>
+  data: Record<string, unknown>
+}
